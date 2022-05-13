@@ -6,7 +6,7 @@ Contains the driver of the M5Stack JoyC joystick, which can obtain the offset va
 
 ## Related Link
 
-[Docment & Datasheet](https://docs.m5stack.com/en/hat/hat-joyc)
+- [Document & Datasheet](https://docs.m5stack.com/en/hat/hat-joyc)
 
 ## License
 
