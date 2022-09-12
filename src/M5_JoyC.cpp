@@ -10,8 +10,8 @@ bool M5_JOYC::begin(
 	_addr = addr;
   	_sda = sda;
 	_scl = scl;
-	_wire->begin(_sda, _scl, 100);
-	delay(10);
+	_wire->setPins(_sda, _scl);
+	_wire->begin();
 	_wire->beginTransmission(_addr);
 	uint8_t error = _wire->endTransmission();
     if(error == 0)
