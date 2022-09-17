@@ -1,5 +1,5 @@
 {
-  "name": "M5_JoyC",
+  "name": "M5Hat-JoyC",
   "description": "Library for M5Stack JoyC",
   "keywords": "M5Stack JoyC",
   "authors": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/m5stack/M5_JoyC.git"
+    "url": "https://github.com/m5stack/M5Hat-JoyC.git"
   },
   "version": "0.0.1",
   "frameworks": "arduino",
