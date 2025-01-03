@@ -79,6 +79,21 @@ uint8_t JoyC::getY(uint8_t pos) {
     return y;
 }
 
+/*! @brief Get X-axis coordinate data.*/
+uint16_t JoyC::getX16(uint8_t pos) {
+    uint8_t data[2];
+    uint8_t reg = 0x50 + pos * 4;
+    readBytes(_addr, reg, data, 2);
+    return (data[0] << 8) | data[1];
+}
+/*! @brief Get Y-axis coordinate data.*/
+uint16_t JoyC::getY16(uint8_t pos) {
+    uint8_t data[2];
+    uint8_t reg = 0x52 + pos * 4;
+    readBytes(_addr, reg, data, 2);
+    return (data[0] << 8) | data[1];
+}
+
 /*! @brief Get angle data.*/
 uint16_t JoyC::getAngle(uint8_t pos) {
     uint8_t data[2];

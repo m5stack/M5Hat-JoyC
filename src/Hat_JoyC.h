@@ -20,6 +20,8 @@ class JoyC {
                uint8_t addr = JOYC_ADDRESS);
     uint8_t getX(uint8_t pos);
     uint8_t getY(uint8_t pos);
+    uint16_t getX16(uint8_t pos);
+    uint16_t getY16(uint8_t pos);
     uint16_t getAngle(uint8_t pos);
     uint16_t getDistance(uint8_t pos);
     uint8_t getPress(uint8_t pos);
